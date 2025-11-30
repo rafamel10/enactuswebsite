@@ -94,6 +94,40 @@ body {
 }
 
 /* =========================================
+   ANIMAÇÃO DO DROPDOWN (HOVER)
+   ========================================= */
+
+/* Aplica o efeito apenas em telas de computador (acima de 992px) 
+   para não atrapalhar o clique no celular */
+@media (min-width: 992px) {
+    
+    /* Quando passar o mouse no item da lista, mostra o menu */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        animation: fadeInUp 0.3s ease-in-out;
+        margin-top: 0; /* Remove espaçamento para o mouse não "escapar" */
+    }
+
+    /* Opcional: Efeito na seta do dropdown */
+    .nav-item.dropdown:hover .dropdown-toggle::after {
+        transform: rotate(180deg);
+        transition: transform 0.3s;
+    }
+}
+
+/* Definição da Animação */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0); /* Começa 20px abaixo */
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0); /* Termina na posição original */
+    }
+}
+
+/* =========================================
    3. HERO & BANNER
    ========================================= */
 .image-stack {
