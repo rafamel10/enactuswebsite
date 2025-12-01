@@ -10,9 +10,10 @@
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
-  background-color: #eeeeee;
+  background-color: #efefef;
   -webkit-font-smoothing: antialiased; /* Renderização de fonte mais suave */
 }
+
 
 /* Utilitários de espaçamento */
 .conteudo {
@@ -351,7 +352,7 @@ body {
 .site-footer {
   background: #014e9a;
   color: #ffffff;
-  padding: 2rem 0;
+  padding: 100 px;
   position: relative;
 }
 
@@ -440,7 +441,7 @@ body {
 
 .nav-btn {
   background: rgba(255, 255, 255, 0.1);
-  color: white;
+  color: rgb(0, 0, 0);
   border: none;
   cursor: pointer;
   padding: 8px; /* Touch target maior */
