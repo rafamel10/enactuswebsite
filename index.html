@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enactus UNIFESP SJC</title>
     <link rel="icon" type="image/x-icon" href="imagens/logoamarela.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -50,9 +54,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-3">
             <li class="nav-item">
-              <a class="nav-link fw-bold sombra" href="quemsomos.html"
-                >Conheça o time</a
-              >
+              <a class="nav-link fw-bold sombra" href="quemsomos.html">
+                Quem somos
+                </a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -136,52 +140,72 @@
 
     <div id="content">
       <div class="container conteudo">
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="imagens/time.jpeg"
-              alt="Time Enactus UNIFESP SJC"
-              class="img-fluid"
-              width="100%"
-              style="margin-left: -3%"
-            />
+       <div class="row align-items-center">
+  
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner rounded-3 shadow-sm"> <div class="carousel-item active">
+                  <img
+                    src="imagens/time.jpeg"
+                    alt="Time Enactus UNIFESP SJC"
+                    class="d-block w-100" 
+                    style="object-fit: cover; height: 100%;" />
+                </div>
+                <div class="carousel-item">
+                  <img src="imagens/img-time-02.HEIC" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagens/img-time-03.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          
+          <div class="row">
+            <h1 class="fw-bold display-5 mb-3">Quem somos</h1> <p class="lh-lg lead"> Somos uma organização sem fins lucrativos presente na
+              Universidade Federal de São Paulo (UNIFESP) no campus de São
+              José dos Campos. Nos dedicamos a inspirar os alunos a melhorar o
+              mundo através da ação empreendedora, contribuindo com
+              comunidades presentes na cidade.
+            </p>
           </div>
 
-          <div class="col-6">
-            <div class="row">
-              <h1 class="fw-bold">Quem somos</h1>
-              <p class="lh-lg" style="font-size: 100%">
-                Somos uma organização sem fins lucrativos presente na
-                Universidade Federal de São Paulo (UNIFESP) no campus de São
-                José dos Campos. Nos dedicamos a inspirar os alunos a melhorar o
-                mundo através da ação empreendedora, contribuindo com
-                comunidades presentes na cidade.
+          <div class="row g-4 pt-3">
+            <div class="col-12 col-md-4">
+              <h3 class="fw-bold h5 text-primary">Missão</h3> <p class="small text-muted">
+                Gerar impacto positivo e transformação nas comunidades locais
+                e nos estudantes, por meio do empreendedorismo social.
               </p>
             </div>
-
-            <div class="row" style="padding-top: 1%">
-              <div class="col-12 col-md-4">
-                <h3 class="fw-bold">Missão</h3>
-                <p class="lh-lg">
-                  Gerar impacto positivo e transformação nas comunidades locais
-                  e nos estudantes, por meio do empreendedorismo social.
-                </p>
-              </div>
-              <div class="col-12 col-md-4">
-                <h3 class="fw-bold">Visão</h3>
-                <p class="lh-lg">
-                  Ser referência no ecossistema de impacto universitário,
-                  engajando jovens líderes para impactar positivamente 1 milhão
-                  de vidas até 2030.
-                </p>
-              </div>
-              <div class="col-12 col-md-4">
-                <h3 class="fw-bold">Valores</h3>
-                <p class="lh-lg">
-                  Inconformismo, Protagonismo, Empatia, Empreendedorismo Social,
-                  Sustentabilidade (IPEES).
-                </p>
-              </div>
+            <div class="col-12 col-md-4">
+              <h3 class="fw-bold h5 text-primary">Visão</h3>
+              <p class="small text-muted">
+                Ser referência no ecossistema de impacto universitário,
+                engajando jovens líderes para impactar positivamente 1 milhão
+                de vidas até 2030.
+              </p>
+            </div>
+            <div class="col-12 col-md-4">
+              <h3 class="fw-bold h5 text-primary">Valores</h3>
+              <p class="small text-muted">
+                Inconformismo, Protagonismo, Empatia, Empreendedorismo Social,
+                Sustentabilidade (IPEES).
+              </p>
             </div>
           </div>
         </div>
