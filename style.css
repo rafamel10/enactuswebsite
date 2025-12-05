@@ -37,7 +37,8 @@ body {
 .navbar.custom-transparent .nav-link,
 .navbar.custom-transparent .navbar-brand {
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 /* Estado Scrolled */
@@ -461,5 +462,95 @@ body {
   padding: 2px;
   border-radius: 2px;
 }
-.highlight.active { background-color: orange; }
 
+.highlight.active {
+  background-color: orange;
+}
+
+/* =========================================
+   8. ACESSIBILIDADE - FOCO VISÍVEL
+   ========================================= */
+*:focus {
+  outline: none !important;
+}
+
+*:focus-visible {
+  outline: 3px solid #ffbf00 !important;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.nav-link:focus-visible {
+  background-color: rgba(255, 191, 0, 0.2);
+  border-radius: 4px;
+  outline: 2px solid #ffbf00 !important;
+  outline-offset: 2px;
+}
+
+.dropdown-toggle:focus-visible {
+  background-color: rgba(255, 191, 0, 0.2);
+  border-radius: 4px;
+  outline: 2px solid #ffbf00 !important;
+  outline-offset: 2px;
+}
+
+.btn:focus,
+.btn:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(255, 191, 0, 0.4) !important;
+  border-color: #ffbf00 !important;
+}
+
+#searchInput:focus,
+#searchInput:focus-visible {
+  border-color: #ffbf00 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(255, 191, 0, 0.25) !important;
+}
+
+.carousel-control-prev:focus-visible,
+.carousel-control-next:focus-visible {
+  outline: 3px solid #fff !important;
+  outline-offset: 2px;
+}
+
+.dropdown-item:focus-visible {
+  background-color: rgba(255, 191, 0, 0.15);
+  outline: 2px solid #ffbf00 !important;
+  outline-offset: -2px;
+}
+
+.footer-icon:focus-visible {
+  outline: 2px solid #ffbf00 !important;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.navbar-brand:focus-visible {
+  outline: 2px solid #ffbf00 !important;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* =========================================
+   9. PÁGINA ATIVA NO MENU
+   ========================================= */
+.nav-link.active {
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 3px;
+  background-color: #ffbf00;
+  border-radius: 2px;
+}
+
+.navbar.scrolled .nav-link.active::after {
+  background-color: #014e9a;
+}
