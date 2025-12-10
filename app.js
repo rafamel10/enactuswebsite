@@ -233,3 +233,23 @@
   window.addEventListener('load', adjustTeamLayouts);
   window.addEventListener('resize', adjustTeamLayouts);
 })();
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const navbar = document.querySelector('.navbar'); // Ajuste se a classe do seu menu for outra
+//     const urlAtual = window.location.href;
+
+//     const mapaDeCores = {
+//         'ecoplan': 'bg-ecoplan',
+//         'revalorize': 'bg-reva',
+//         'ativamente': 'bg-ativa',
+//         'organogas': 'bg-organo'
+//     };
+
+//     // O código verifica qual página é e aplica a classe correta
+//     for (const [pagina, classeCor] of Object.entries(mapaDeCores)) {
+//         if (urlAtual.includes(pagina)) {
+//             navbar.classList.add(classeCor);
+//             break; // Para de procurar assim que achar a correspondência
+//         }
+//     }
+// });

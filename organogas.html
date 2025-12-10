@@ -1,681 +1,475 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Organogás - Enactus UNIFESP SJC</title>
-    <link rel="icon" type="image/x-icon" href="imagens/logoamarela.png" />
 
-    <meta
-      name="description"
-      content="Conheça o projeto Organogás, que promove sustentabilidade e geração de renda ao transformar resíduos orgânicos em biogás e biofertilizante."
-    />
-    <meta property="og:title" content="Organogás - Enactus UNIFESP SJC" />
-    <meta
-      property="og:description"
-      content="Conheça o projeto Organogás, que promove sustentabilidade e geração de renda ao transformar resíduos orgânicos em biogás e biofertilizante."
-    />
-    <meta property="og:image" content="" />
-    <!-- nesse content, coloca alguma imagem, mas no servidor do site -->
-    <meta property="og:url" content="" />
-    <meta property="og:type" content="website" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organogás - Enactus UNIFESP SJC</title>
+  <link rel="icon" type="image/x-icon" href="imagens/logoamarela.png" />
 
-    <link rel="canonical" href="" />
-    <link rel="preload" as="image" href="imagens/banner_organo.jpg" />
-    <link rel="preload" as="image" href="imagens/logoamarela_nomebranco.png" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="description"
+    content="Conheça o projeto Organogás, que promove sustentabilidade e geração de renda ao transformar resíduos orgânicos em biogás e biofertilizante." />
+  <meta property="og:title" content="Organogás - Enactus UNIFESP SJC" />
+  <meta property="og:description"
+    content="Conheça o projeto Organogás, que promove sustentabilidade e geração de renda ao transformar resíduos orgânicos em biogás e biofertilizante." />
+  <meta property="og:image" content="" />
+  <!-- nesse content, coloca alguma imagem, mas no servidor do site -->
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
+  <link rel="canonical" href="" />
+  <link rel="preload" as="image" href="imagens/banner_organo.jpg" />
+  <link rel="preload" as="image" href="imagens/logoamarela_nomebranco.png" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light custom-transparent p-3 fixed-top"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="imagens/logoamarela.png"
-            alt="Enactus UNIFESP SJC"
-            width="50"
-            height="50"
-            class="img-fluid d-inline-block align-text-top"
-          />
-        </a>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css" />
+</head>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light custom-transparent p-3 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="imagens/logoamarela.png" alt="Enactus UNIFESP SJC" width="50" height="50"
+          class="img-fluid d-inline-block align-text-top" />
+      </a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-3">
-            <li class="nav-item">
-              <a class="nav-link fw-bold sombra" href="index.html"
-                >Página inicial</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold sombra" href="quemsomos.html"
-                >Quem somos</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle fw-bold sombra"
-                id="navbarScrollingDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Nossos projetos
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarScrollingDropdown"
-              >
-                <li><a class="dropdown-item disabled">ATIVOS</a></li>
-                <li>
-                  <a class="dropdown-item" href="organogas.html">Organogás</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item disabled">FINALIZADOS</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="ativamente.html">Ativamente</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="revalorize.html">Revalorize</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="ecoplan.html">Ecoplan</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold sombra" href="contato.html">Contato</a>
-            </li>
-          </ul>
-        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="d-flex">
-          <input
-            id="searchInput"
-            class="form-control me-2"
-            type="search"
-            placeholder="Digite aqui..."
-            aria-label="Pesquisar"
-          />
+      <div class="collapse navbar-collapse sombra" id="navbarNav" style="border-radius: 5px; margin-top: 10px">
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a class="nav-link fw-bold sombra" href="index.html">Página inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold sombra" href="quemsomos.html">Quem somos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bold sombra" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Nossos projetos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" style="margin-bottom: 10px">
+              <li><a class="dropdown-item disabled">ATIVOS</a></li>
+              <li>
+                <a class="dropdown-item" href="organogas.html">Organogás</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item disabled">FINALIZADOS</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="ativamente.html">Ativamente</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="revalorize.html">Revalorize</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="ecoplan.html">Ecoplan</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold sombra" href="contato.html">Contato</a>
+          </li>
+        </ul>
+
+        <div class="d-flex mt-3 mt-lg-0 ms-lg-auto search-container">
+          <input id="searchInput" class="form-control me-2" type="search" placeholder="Digite aqui..."
+            aria-label="Pesquisar" />
           <button id="searchBtn" class="btn btn-warning" type="button">
             Pesquisar
           </button>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="popup" id="popup">
-      <button class="nav-btn" id="prevBtn">&#8593;</button>
-      <span class="popup-text" id="popupText">0/0</span>
-      <button class="nav-btn" id="nextBtn">&#8595;</button>
-      <button class="close-btn" id="closeBtn">&#215;</button>
+  <div class="popup" id="popup">
+    <button class="nav-btn" id="prevBtn">&#8593;</button>
+    <span class="popup-text" id="popupText">0/0</span>
+    <button class="nav-btn" id="nextBtn">&#8595;</button>
+    <button class="close-btn" id="closeBtn">&#215;</button>
+  </div>
+
+  <div class="image-stack position-relative">
+    <img id="banner" src="imagens/banner_organo.jpg" class="img-fluid" alt="Banner Organogas" />
+    <img id="logo-grande" src="imagens/logoorgano_semfundo_comborda.png" class="img-fluid" />
+  </div>
+
+  <div id="content">
+    <div class="container conteudo">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+          <img src="" alt="" class="img-fluid rounded-3 shadow-sm" />
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <h1 class="fw-bold mb-3">Sobre nós - Organogas</h1>
+          <p class="lh-lg">
+            O Organogas é um projeto da Enactus UNIFESP SJC que propõe
+            transformar o ciclo do desperdício em um novo começo. No Brasil,
+            mais de 800 milhões de toneladas de alimentos são desperdiçadas
+            anualmente, sendo que a maior parte dessa perda ocorre ainda na
+            produção e distribuição.
+            <br /><br />
+            Nosso propósito é mudar o destino do que sobra para transformar o
+            futuro. Utilizamos biodigestores anaeróbios para reaproveitar
+            resíduos alimentícios, convertendo-os em dois subprodutos
+            valiosos: o biogás, uma fonte de energia limpa, e o
+            biofertilizante, que devolve nutrientes ao solo. Assim, geramos
+            energia, alimento e dignidade, apoiando pequenos produtores
+            rurais.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="image-stack position-relative">
-      <img
-        id="banner"
-        src="imagens/banner_organo.jpg"
-        class="img-fluid"
-        alt="Banner Organogas"
-      />
-      <img
-        id="logo-grande"
-        src="imagens/logoorgano_semfundo_comborda.png"
-        class="img-fluid"
-      />
+    <!-- ODS -->
+    <div class="container conteudo">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h1 class="fw-bold">
+            Objetivos de Desenvolvimento Sustentável que atendemos 🧡
+          </h1>
+        </div>
+      </div>
+
+      <!-- Primeira linha de ODS -->
+      <div class="row g-4 mb-4">
+        <div class="col-12 col-md-6">
+          <div class="row align-items-start">
+            <div class="col-4 col-md-3">
+              <img src="imagens/ods2.webp" alt="ODS 2" class="img-fluid" style="border-radius: 10px" />
+            </div>
+            <div class="col-8 col-md-9">
+              <h4 class="fw-bold">
+                ODS 2: Fome zero e agricultura sustentável
+              </h4>
+              <p class="lh-lg">
+                Produzimos um biofertilizante que devolve nutrientes ao solo,
+                substituindo químicos e aumentando a produtividade dos
+                pequenos produtores, garantindo a continuidade do ciclo
+                produtivo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="row align-items-start">
+            <div class="col-4 col-md-3">
+              <img src="imagens/ods7.webp" alt="ODS 7" class="img-fluid" style="border-radius: 10px" />
+            </div>
+            <div class="col-8 col-md-9">
+              <h4 class="fw-bold">ODS 7: Energia limpa e acessível</h4>
+              <p class="lh-lg">
+                Convertemos resíduos orgânicos em biogás, que pode ser
+                transformado em energia térmica ou elétrica, oferecendo uma
+                alternativa renovável às fontes fósseis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Segunda linha de ODS -->
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="row align-items-start">
+            <div class="col-4 col-md-3">
+              <img src="imagens/ods12.jpg" alt="ODS 12" class="img-fluid" style="border-radius: 10px" />
+            </div>
+            <div class="col-8 col-md-9">
+              <h4 class="fw-bold">ODS 12: Consumo e produção responsáveis</h4>
+              <p class="lh-lg">
+                Atuamos na redução do desperdício, dando um destino correto
+                aos resíduos orgânicos que, de outra forma, acabariam em
+                lixões, promovendo a economia circular.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div id="content">
-      <div class="container conteudo">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-            <img src="" alt="" class="img-fluid rounded-3 shadow-sm" />
-          </div>
+    <!-- COMO ATUAMOS -->
+    <div class="container conteudo">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 order-lg-1 order-2">
+          <h1 class="fw-bold mb-3">Como atuamos</h1>
+          <p class="lh-lg">
+            O projeto desenvolveu tecnologias próprias para maximizar a
+            eficiência, incluindo biodigestores de 500 litros (ampliados com
+            apoio da Amanco Wavin), filtros de ácido sulfídrico para purificar
+            o gás e sistemas de armazenamento expansíveis. <br /><br />
+            Além da inovação técnica, possuímos um modelo de negócio de
+            impacto social: a cada três biodigestores vendidos, um é doado
+            para pequenos produtores rurais. Também comercializamos o
+            biofertilizante concentrado, revertendo parte das vendas para
+            doações, garantindo acesso à tecnologia e sustentabilidade no
+            campo.
+          </p>
+        </div>
 
-          <div class="col-12 col-lg-6">
-            <h1 class="fw-bold mb-3">Sobre nós - Organogas</h1>
-            <p class="lh-lg">
-              O Organogas é um projeto da Enactus UNIFESP SJC que propõe
-              transformar o ciclo do desperdício em um novo começo. No Brasil,
-              mais de 800 milhões de toneladas de alimentos são desperdiçadas
-              anualmente, sendo que a maior parte dessa perda ocorre ainda na
-              produção e distribuição.
-              <br /><br />
-              Nosso propósito é mudar o destino do que sobra para transformar o
-              futuro. Utilizamos biodigestores anaeróbios para reaproveitar
-              resíduos alimentícios, convertendo-os em dois subprodutos
-              valiosos: o biogás, uma fonte de energia limpa, e o
-              biofertilizante, que devolve nutrientes ao solo. Assim, geramos
-              energia, alimento e dignidade, apoiando pequenos produtores
-              rurais.
-            </p>
-          </div>
+        <div class="col-12 col-lg-6 order-lg-2 order-1">
+          <img src="" alt="" class="img-fluid rounded-3 shadow-sm mb-4 mb-lg-0" />
         </div>
       </div>
+    </div>
 
-      <!-- ODS -->
-      <div class="container conteudo">
-        <div class="row">
-          <div class="col-12 text-center mb-4">
-            <h1 class="fw-bold">
-              Objetivos de Desenvolvimento Sustentável que atendemos 🧡
-            </h1>
-          </div>
-        </div>
-
-        <!-- Primeira linha de ODS -->
-        <div class="row g-4 mb-4">
-          <div class="col-12 col-md-6">
-            <div class="row align-items-start">
-              <div class="col-4 col-md-3">
-                <img
-                  src="imagens/ods2.webp"
-                  alt="ODS 2"
-                  class="img-fluid"
-                  style="border-radius: 10px"
-                />
-              </div>
-              <div class="col-8 col-md-9">
-                <h4 class="fw-bold">
-                  ODS 2: Fome zero e agricultura sustentável
-                </h4>
-                <p class="lh-lg">
-                  Produzimos um biofertilizante que devolve nutrientes ao solo,
-                  substituindo químicos e aumentando a produtividade dos
-                  pequenos produtores, garantindo a continuidade do ciclo
-                  produtivo.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <div class="row align-items-start">
-              <div class="col-4 col-md-3">
-                <img
-                  src="imagens/ods7.webp"
-                  alt="ODS 7"
-                  class="img-fluid"
-                  style="border-radius: 10px"
-                />
-              </div>
-              <div class="col-8 col-md-9">
-                <h4 class="fw-bold">ODS 7: Energia limpa e acessível</h4>
-                <p class="lh-lg">
-                  Convertemos resíduos orgânicos em biogás, que pode ser
-                  transformado em energia térmica ou elétrica, oferecendo uma
-                  alternativa renovável às fontes fósseis.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Segunda linha de ODS -->
-        <div class="row g-4">
-          <div class="col-12 col-md-6">
-            <div class="row align-items-start">
-              <div class="col-4 col-md-3">
-                <img
-                  src="imagens/ods12.jpg"
-                  alt="ODS 12"
-                  class="img-fluid"
-                  style="border-radius: 10px"
-                />
-              </div>
-              <div class="col-8 col-md-9">
-                <h4 class="fw-bold">ODS 12: Consumo e produção responsáveis</h4>
-                <p class="lh-lg">
-                  Atuamos na redução do desperdício, dando um destino correto
-                  aos resíduos orgânicos que, de outra forma, acabariam em
-                  lixões, promovendo a economia circular.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- RESULTADOS -->
+    <div class="container conteudo">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <h1 class="fw-bold mb-3 text-center">Resultados 💚</h1>
+          <ul class="lh-lg">
+            <li class="mb-3">
+              <strong>Biodigestores mais eficientes e baratos:</strong>
+              conseguimos reduzir em 52% o custo de fabricação por litro de
+              capacidade dos nossos biodigestores. Isso foi possível ao
+              redimensionarmos o tanque de 220 para 500 litros, otimizando o
+              material utilizado em relação ao volume de resíduos tratados.
+            </li>
+            <li class="mb-3">
+              <strong>Salto na capacidade de processamento:</strong> com a
+              instalação das novas unidades maiores, aumentamos em 227% a
+              capacidade total do projeto de transformar lixo orgânico em
+              recursos, permitindo atender demandas muito maiores.
+            </li>
+            <li class="mb-3">
+              <strong>Tecnologia aprimorada:</strong> desenvolvemos e
+              instalamos cinco melhorias essenciais no sistema, incluindo um
+              filtro de ácido sulfídrico (que torna o biogás mais puro e menos
+              corrosivo) e uma antecâmara de alimentação (que impede a entrada
+              de ar indesejada durante o abastecimento).
+            </li>
+            <li class="mb-3">
+              <strong>Biofertilizante validado:</strong> nossas pesquisas
+              agronômicas comprovaram que o nosso biofertilizante, quando
+              enriquecido com microalgas, gera 2,3 vezes mais brotamento e
+              garante plantas mais resistentes do que o uso de adubos comuns
+              ou resíduos puros.
+            </li>
+            <li class="mb-3">
+              <strong>Preço justo com impacto real:</strong> conseguimos
+              lançar o produto no mercado com um valor 10% abaixo da
+              concorrência. Além disso, viabilizamos nosso modelo "3 para 1":
+              a cada três biodigestores vendidos, financiamos a doação de uma
+              unidade completa para um pequeno produtor rural.
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
 
-      <!-- COMO ATUAMOS -->
-      <div class="container conteudo">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-6 order-lg-1 order-2">
-            <h1 class="fw-bold mb-3">Como atuamos</h1>
-            <p class="lh-lg">
-              O projeto desenvolveu tecnologias próprias para maximizar a
-              eficiência, incluindo biodigestores de 500 litros (ampliados com
-              apoio da Amanco Wavin), filtros de ácido sulfídrico para purificar
-              o gás e sistemas de armazenamento expansíveis. <br /><br />
-              Além da inovação técnica, possuímos um modelo de negócio de
-              impacto social: a cada três biodigestores vendidos, um é doado
-              para pequenos produtores rurais. Também comercializamos o
-              biofertilizante concentrado, revertendo parte das vendas para
-              doações, garantindo acesso à tecnologia e sustentabilidade no
-              campo.
-            </p>
-          </div>
-
-          <div class="col-12 col-lg-6 order-lg-2 order-1">
-            <img
-              src=""
-              alt=""
-              class="img-fluid rounded-3 shadow-sm mb-4 mb-lg-0"
-            />
-          </div>
-        </div>
+    <div class="container conteudo">
+      <div class="col-12 text-center mb-4">
+        <h1 class="fw-bold align-content-center">Galeria de fotos 📸</h1>
       </div>
 
-      <!-- RESULTADOS -->
-      <div class="container conteudo">
-        <div class="row align-items-center">
-          <div class="col-12">
-            <h1 class="fw-bold mb-3 text-center">Resultados 💚</h1>
-            <ul class="lh-lg">
-              <li class="mb-3">
-                <strong>Biodigestores mais eficientes e baratos:</strong>
-                conseguimos reduzir em 52% o custo de fabricação por litro de
-                capacidade dos nossos biodigestores. Isso foi possível ao
-                redimensionarmos o tanque de 220 para 500 litros, otimizando o
-                material utilizado em relação ao volume de resíduos tratados.
-              </li>
-              <li class="mb-3">
-                <strong>Salto na capacidade de processamento:</strong> com a
-                instalação das novas unidades maiores, aumentamos em 227% a
-                capacidade total do projeto de transformar lixo orgânico em
-                recursos, permitindo atender demandas muito maiores.
-              </li>
-              <li class="mb-3">
-                <strong>Tecnologia aprimorada:</strong> desenvolvemos e
-                instalamos cinco melhorias essenciais no sistema, incluindo um
-                filtro de ácido sulfídrico (que torna o biogás mais puro e menos
-                corrosivo) e uma antecâmara de alimentação (que impede a entrada
-                de ar indesejada durante o abastecimento).
-              </li>
-              <li class="mb-3">
-                <strong>Biofertilizante validado:</strong> nossas pesquisas
-                agronômicas comprovaram que o nosso biofertilizante, quando
-                enriquecido com microalgas, gera 2,3 vezes mais brotamento e
-                garante plantas mais resistentes do que o uso de adubos comuns
-                ou resíduos puros.
-              </li>
-              <li class="mb-3">
-                <strong>Preço justo com impacto real:</strong> conseguimos
-                lançar o produto no mercado com um valor 10% abaixo da
-                concorrência. Além disso, viabilizamos nosso modelo "3 para 1":
-                a cada três biodigestores vendidos, financiamos a doação de uma
-                unidade completa para um pequeno produtor rural.
-              </li>
-            </ul>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+        style="width: 100%; margin: 0 auto">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+            aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+            aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+            aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+            aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+            aria-label="Slide 11"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100"
+              src="https://static.wixstatic.com/media/657e42_eb9d09d352c54a2289275ed098290216~mv2.jpg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_eb9d09d352c54a2289275ed098290216~mv2.jpg"
+              alt="1" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"
+              src="https://static.wixstatic.com/media/657e42_630f64d074b047088f502700195df10d~mv2.jpg/v1/fill/w_489,h_653,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/657e42_630f64d074b047088f502700195df10d~mv2.jpg"
+              alt="2" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"
+              src="https://static.wixstatic.com/media/657e42_267e3185df7b4d8283a569b6d85921f6~mv2.jpg/v1/fill/w_1152,h_648,al_c,q_85,enc_auto/657e42_267e3185df7b4d8283a569b6d85921f6~mv2.jpg"
+              alt="3" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"
+              src="https://static.wixstatic.com/media/657e42_c595702ad1b34f38a2b77cdaa4f2f5a5~mv2.jpg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_c595702ad1b34f38a2b77cdaa4f2f5a5~mv2.jpg"
+              alt="4" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"
+              src="https://static.wixstatic.com/media/657e42_2882051bb34c41518b77ac71eeb6911e~mv2.jpg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_2882051bb34c41518b77ac71eeb6911e~mv2.jpg"
+              alt="5" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"
+              src="https://static.wixstatic.com/media/657e42_d6e7ef0b150f46e9922327580864c28c~mv2.gif" alt="6" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"
+              src="https://static.wixstatic.com/media/657e42_a546a3a528b64d7abb030e3be0f4adeb~mv2.jpg/v1/fill/w_489,h_653,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/657e42_a546a3a528b64d7abb030e3be0f4adeb~mv2.jpg"
+              alt="7" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"
+              src="https://static.wixstatic.com/media/657e42_c5831ad837924b4991b24bebb008e8e8~mv2.jpg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_c5831ad837924b4991b24bebb008e8e8~mv2.jpg"
+              alt="8" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"
+              src="https://static.wixstatic.com/media/657e42_412e069533474ba1a71701526aef8fbd~mv2.jpg/v1/fill/w_489,h_653,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/657e42_412e069533474ba1a71701526aef8fbd~mv2.jpg"
+              alt="9" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"
+              src="https://static.wixstatic.com/media/657e42_7e6d8ef22a474d1296ce33ed7e23f2fe~mv2.jpeg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_7e6d8ef22a474d1296ce33ed7e23f2fe~mv2.jpeg"
+              alt="10" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"
+              src="https://static.wixstatic.com/media/657e42_4dcb5d0ac214438d84b6070deac02efd~mv2.jpeg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_4dcb5d0ac214438d84b6070deac02efd~mv2.jpeg"
+              alt="11" />
           </div>
         </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container conteudo">
+      <div class="col-12 text-center mb-4">
+        <h1 class="fw-bold align-content-center">Nosso Instagram 📱</h1>
       </div>
 
-      <div class="container conteudo">
-        <div class="col-12 text-center mb-4">
-          <h1 class="fw-bold align-content-center">Galeria de fotos 📸</h1>
-        </div>
-
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-          style="width: 100%; margin: 0 auto"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="5"
-              aria-label="Slide 6"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="6"
-              aria-label="Slide 7"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="7"
-              aria-label="Slide 8"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="8"
-              aria-label="Slide 9"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="9"
-              aria-label="Slide 10"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="10"
-              aria-label="Slide 11"
-            ></button>
-          </div>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                class="d-block w-100"
-                src="https://static.wixstatic.com/media/657e42_eb9d09d352c54a2289275ed098290216~mv2.jpg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_eb9d09d352c54a2289275ed098290216~mv2.jpg"
-                alt="1"
-              />
+      <div class="instagram-profile-card">
+        <div class="profile-left">
+          <div class="profile-header" style="margin-bottom: 10px">
+            <div class="profile-pic">
+              <img src="imagens/logoorgano_comfundo.png" class="profile-pic-inner" />
             </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://static.wixstatic.com/media/657e42_630f64d074b047088f502700195df10d~mv2.jpg/v1/fill/w_489,h_653,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/657e42_630f64d074b047088f502700195df10d~mv2.jpg"
-                alt="2"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://static.wixstatic.com/media/657e42_267e3185df7b4d8283a569b6d85921f6~mv2.jpg/v1/fill/w_1152,h_648,al_c,q_85,enc_auto/657e42_267e3185df7b4d8283a569b6d85921f6~mv2.jpg"
-                alt="3"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://static.wixstatic.com/media/657e42_c595702ad1b34f38a2b77cdaa4f2f5a5~mv2.jpg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_c595702ad1b34f38a2b77cdaa4f2f5a5~mv2.jpg"
-                alt="4"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://static.wixstatic.com/media/657e42_2882051bb34c41518b77ac71eeb6911e~mv2.jpg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_2882051bb34c41518b77ac71eeb6911e~mv2.jpg"
-                alt="5"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://static.wixstatic.com/media/657e42_d6e7ef0b150f46e9922327580864c28c~mv2.gif"
-                alt="6"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://static.wixstatic.com/media/657e42_a546a3a528b64d7abb030e3be0f4adeb~mv2.jpg/v1/fill/w_489,h_653,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/657e42_a546a3a528b64d7abb030e3be0f4adeb~mv2.jpg"
-                alt="7"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://static.wixstatic.com/media/657e42_c5831ad837924b4991b24bebb008e8e8~mv2.jpg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_c5831ad837924b4991b24bebb008e8e8~mv2.jpg"
-                alt="8"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://static.wixstatic.com/media/657e42_412e069533474ba1a71701526aef8fbd~mv2.jpg/v1/fill/w_489,h_653,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/657e42_412e069533474ba1a71701526aef8fbd~mv2.jpg"
-                alt="9"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://static.wixstatic.com/media/657e42_7e6d8ef22a474d1296ce33ed7e23f2fe~mv2.jpeg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_7e6d8ef22a474d1296ce33ed7e23f2fe~mv2.jpeg"
-                alt="10"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://static.wixstatic.com/media/657e42_4dcb5d0ac214438d84b6070deac02efd~mv2.jpeg/v1/fill/w_870,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/657e42_4dcb5d0ac214438d84b6070deac02efd~mv2.jpeg"
-                alt="11"
-              />
-            </div>
-          </div>
-
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="container conteudo">
-        <div class="col-12 text-center mb-4">
-          <h1 class="fw-bold align-content-center">Nosso Instagram 📱</h1>
-        </div>
-
-        <div class="instagram-profile-card">
-          <div class="profile-left">
-            <div class="profile-header" style="margin-bottom: 10px">
-              <div class="profile-pic">
-                <img
-                  src="imagens/logoorgano_comfundo.png"
-                  class="profile-pic-inner"
-                />
-              </div>
-              <div class="profile-stats-button">
-                <div class="profile-stats">
-                  <div class="stat">
-                    <div class="stat-number">32</div>
-                    <div class="stat-label">posts</div>
-                  </div>
-                  <div class="stat">
-                    <div class="stat-number">172</div>
-                    <div class="stat-label">seguidores</div>
-                  </div>
-                  <div class="stat">
-                    <div class="stat-number">163</div>
-                    <div class="stat-label">seguindo</div>
-                  </div>
+            <div class="profile-stats-button">
+              <div class="profile-stats">
+                <div class="stat">
+                  <div class="stat-number">32</div>
+                  <div class="stat-label">posts</div>
                 </div>
-                <button
-                  class="access-button"
-                  onclick="window.open('https://www.instagram.com/projetoorganogas/', '_blank', 'noopener, noreferrer')"
-                >
-                  Acessar perfil do Instagram
-                </button>
+                <div class="stat">
+                  <div class="stat-number">172</div>
+                  <div class="stat-label">seguidores</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-number">163</div>
+                  <div class="stat-label">seguindo</div>
+                </div>
               </div>
-            </div>
-
-            <div class="profile-info">
-              <div class="username">Projeto Organogas</div>
-              <div class="category">Criador(a) de conteúdo digital</div>
-              <div class="bio" style="margin-bottom: 0px">
-                ♻️ Biogás e biofertilizante pela biodigestão de resíduos
-                orgânicos<br />
-                💡 Projeto da
-                <a
-                  href="https://instagram.com/sjcunifespenactus"
-                  class="link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >@sjcunifespenactus</a
-                >
-              </div>
-              <a
-                href="linktr.ee/organogas"
-                class="link"
-                target="_blank"
-                rel="noopener noreferrer"
-                >linktr.ee/organogas</a
-              >
+              <button class="access-button"
+                onclick="window.open('https://www.instagram.com/projetoorganogas/', '_blank', 'noopener, noreferrer')">
+                Acessar perfil do Instagram
+              </button>
             </div>
           </div>
 
-          <div class="posts-section">
-            <div class="posts-grid">
-              <div
-                class="post-preview"
-                onclick="window.open('https://www.instagram.com/reel/DRPwwIMgJdm/', '_blank', 'noopener,noreferrer')"
-              >
-                <img
-                  src="imagens/post1_organo.jpg"
-                  style="aspect-ratio: 4 / 5"
-                />
-              </div>
-              <div
-                class="post-preview"
-                onclick="window.open('https://www.instagram.com/p/DKVZKq_h-D9/', '_blank', 'noopener,noreferrer')"
-              >
-                <img
-                  src="imagens/post2_organo.jpg"
-                  style="aspect-ratio: 4 / 5"
-                />
-              </div>
-              <div
-                class="post-preview"
-                onclick="window.open('https://www.instagram.com/p/DKIXvHSTL_k/', '_blank', 'noopener,noreferrer')"
-              >
-                <img
-                  src="imagens/post3_organo.jpg"
-                  style="aspect-ratio: 4 / 5"
-                />
-              </div>
+          <div class="profile-info">
+            <div class="username">Projeto Organogas</div>
+            <div class="category">Criador(a) de conteúdo digital</div>
+            <div class="bio" style="margin-bottom: 0px">
+              ♻️ Biogás e biofertilizante pela biodigestão de resíduos
+              orgânicos<br />
+              💡 Projeto da
+              <a href="https://instagram.com/sjcunifespenactus" class="link" target="_blank"
+                rel="noopener noreferrer">@sjcunifespenactus</a>
+            </div>
+            <a href="linktr.ee/organogas" class="link" target="_blank" rel="noopener noreferrer">linktr.ee/organogas</a>
+          </div>
+        </div>
+
+        <div class="posts-section">
+          <div class="posts-grid">
+            <div class="post-preview"
+              onclick="window.open('https://www.instagram.com/reel/DRPwwIMgJdm/', '_blank', 'noopener,noreferrer')">
+              <img src="imagens/post1_organo.jpg" style="aspect-ratio: 4 / 5" />
+            </div>
+            <div class="post-preview"
+              onclick="window.open('https://www.instagram.com/p/DKVZKq_h-D9/', '_blank', 'noopener,noreferrer')">
+              <img src="imagens/post2_organo.jpg" style="aspect-ratio: 4 / 5" />
+            </div>
+            <div class="post-preview"
+              onclick="window.open('https://www.instagram.com/p/DKIXvHSTL_k/', '_blank', 'noopener,noreferrer')">
+              <img src="imagens/post3_organo.jpg" style="aspect-ratio: 4 / 5" />
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer class="site-footer mt-5" style="background-color: #567913">
-      <div
-        class="container py-4 d-flex justify-content-between align-items-center"
-      >
-        <div class="footer-left d-flex align-items-center">
-          <span
-            ><img src="imagens/logobranca.png" width="30" height="30"
-          /></span>
-        </div>
-
-        <div class="footer-center">© 2025, Enactus UNIFESP SJC</div>
-
-        <div class="footer-right">
-          <a
-            href="https://www.instagram.com/sjcunifespenactus/"
-            class="footer-icon"
-            aria-label="Instagram"
-          >
-            <img
-              src="imagens/instagram.png"
-              alt="Instagram"
-              width="30"
-              height="30"
-            />
-          </a>
-
-          <a
-            href="https://www.linkedin.com/company/enactusunifespsjc/posts/?feedView=all"
-            class="footer-icon ms-3"
-            aria-label="LinkedIn"
-          >
-            <img
-              src="imagens/linkedin.webp"
-              alt="LinkedIn"
-              width="30"
-              height="30"
-            />
-          </a>
-
-          <a
-            href="mailto:enactus.unifesp.ict@gmail.com"
-            class="footer-icon ms-3"
-            aria-label="Email"
-          >
-            <img src="imagens/email.png" alt="Email" width="30" height="30" />
-          </a>
-        </div>
+  <footer class="site-footer mt-5" style="background-color: #567913">
+    <div class="container py-4 d-flex justify-content-between align-items-center">
+      <div class="footer-left d-flex align-items-center">
+        <span><img src="imagens/logobranca.png" width="30" height="30" /></span>
       </div>
-    </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+      <div class="footer-center">© 2025, Enactus UNIFESP SJC</div>
+
+      <div class="footer-right">
+        <a href="https://www.instagram.com/sjcunifespenactus/" class="footer-icon" aria-label="Instagram">
+          <img src="imagens/instagram.png" alt="Instagram" width="30" height="30" />
+        </a>
+
+        <a href="https://www.linkedin.com/company/enactusunifespsjc/posts/?feedView=all" class="footer-icon ms-3"
+          aria-label="LinkedIn">
+          <img src="imagens/linkedin.webp" alt="LinkedIn" width="30" height="30" />
+        </a>
+
+        <a href="mailto:" class="footer-icon ms-3" aria-label="Email">
+          <img src="imagens/email.png" alt="Email" width="30" height="30" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

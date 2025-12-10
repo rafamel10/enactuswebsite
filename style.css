@@ -14,7 +14,6 @@ body {
   -webkit-font-smoothing: antialiased; /* Renderização de fonte mais suave */
 }
 
-
 /* Utilitários de espaçamento */
 .conteudo {
   padding-top: 40px;
@@ -101,31 +100,30 @@ body {
 /* Aplica o efeito apenas em telas de computador (acima de 992px) 
    para não atrapalhar o clique no celular */
 @media (min-width: 992px) {
-    
-    /* Quando passar o mouse no item da lista, mostra o menu */
-    .nav-item.dropdown:hover .dropdown-menu {
-        display: block;
-        animation: fadeInUp 0.3s ease-in-out;
-        margin-top: 0; /* Remove espaçamento para o mouse não "escapar" */
-    }
+  /* Quando passar o mouse no item da lista, mostra o menu */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeInUp 0.3s ease-in-out;
+    margin-top: 0; /* Remove espaçamento para o mouse não "escapar" */
+  }
 
-    /* Opcional: Efeito na seta do dropdown */
-    .nav-item.dropdown:hover .dropdown-toggle::after {
-        transform: rotate(180deg);
-        transition: transform 0.3s;
-    }
+  /* Opcional: Efeito na seta do dropdown */
+  .nav-item.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+  }
 }
 
 /* Definição da Animação */
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 20px, 0); /* Começa 20px abaixo */
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0); /* Termina na posição original */
-    }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0); /* Começa 20px abaixo */
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); /* Termina na posição original */
+  }
 }
 
 /* =========================================
@@ -162,7 +160,7 @@ body {
 .card {
   overflow: hidden;
   border: none;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
 }
 
@@ -215,7 +213,8 @@ body {
   padding: 24px;
   display: flex;
   gap: 24px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
   flex-wrap: wrap; /* Permite quebrar linha no mobile */
 }
 
@@ -237,7 +236,14 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,13 +258,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; 
+  overflow: hidden;
 }
 /* Caso tenha imagem real dentro */
 .profile-pic-inner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .profile-stats-button {
@@ -275,14 +281,42 @@ body {
   width: 100%;
 }
 
-.stat-number { font-size: 16px; font-weight: 600; color: #262626; display: block; }
-.stat-label { font-size: 12px; color: #8e8e8e; }
-.stat { text-align: center; }
+.stat-number {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+  display: block;
+}
+.stat-label {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+.stat {
+  text-align: center;
+}
 
-.username { font-size: 16px; font-weight: 600; color: #262626; }
-.category { font-size: 12px; color: #8e8e8e; margin-bottom: 8px; }
-.bio { font-size: 14px; color: #262626; line-height: 1.4; margin-bottom: 8px; }
-.link { font-size: 14px; color: #00376b; text-decoration: none; font-weight: 600;}
+.username {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+.category {
+  font-size: 12px;
+  color: #8e8e8e;
+  margin-bottom: 8px;
+}
+.bio {
+  font-size: 14px;
+  color: #262626;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.link {
+  font-size: 14px;
+  color: #00376b;
+  text-decoration: none;
+  font-weight: 600;
+}
 
 .access-button {
   padding: 7px 16px;
@@ -296,7 +330,9 @@ body {
   cursor: pointer;
   margin-top: auto;
 }
-.access-button:hover { background: #1877f2; }
+.access-button:hover {
+  background: #1877f2;
+}
 
 /* Grid de Posts Responsiva */
 .posts-section {
@@ -322,8 +358,14 @@ body {
   transition: opacity 0.2s;
 }
 
-.post-preview:hover { opacity: 0.8; }
-.post-preview img { width: 100%; height: 100%; object-fit: cover; }
+.post-preview:hover {
+  opacity: 0.8;
+}
+.post-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* Mobile Instagram Fix */
 @media (max-width: 768px) {
@@ -332,15 +374,15 @@ body {
     height: auto; /* Remove altura fixa */
     padding: 16px;
   }
-  
+
   .profile-left {
     width: 100%;
   }
-  
+
   .posts-section {
     width: 100%;
   }
-  
+
   .posts-grid {
     max-width: 100%; /* Ocupa largura total no mobile */
   }
@@ -379,9 +421,15 @@ body {
   margin-left: 10px;
   font-size: 1.2rem;
 }
-.site-footer .footer-icon:first-child { margin-left: 0; }
-.site-footer .footer-icon svg { opacity: 0.95; }
-.site-footer .footer-right a:hover { opacity: 0.85; }
+.site-footer .footer-icon:first-child {
+  margin-left: 0;
+}
+.site-footer .footer-icon svg {
+  opacity: 0.95;
+}
+.site-footer .footer-right a:hover {
+  opacity: 0.85;
+}
 
 /* Footer Centro e Lados com Flexbox */
 .site-footer .footer-left,
@@ -406,7 +454,7 @@ body {
     gap: 1.5rem;
     text-align: center;
   }
-  
+
   .site-footer .footer-left,
   .site-footer .footer-right,
   .site-footer .footer-center {
@@ -436,7 +484,9 @@ body {
   max-width: 400px;
 }
 
-.popup.show { display: flex; }
+.popup.show {
+  display: flex;
+}
 
 .nav-btn {
   background: rgba(255, 255, 255, 0.1);
@@ -452,8 +502,13 @@ body {
   border-radius: 4px;
 }
 
-.nav-btn:hover:not(:disabled) { background: rgba(255, 255, 255, 0.2); }
-.nav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+.nav-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+}
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
 
 .highlight {
   background-color: yellow;
@@ -538,7 +593,7 @@ body {
 }
 
 .nav-link.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 50%;
@@ -580,7 +635,7 @@ body {
 }
 
 /* Mobile: 2 cards por linha */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .team-area .card {
     width: calc(50% - 0.75rem);
     max-width: 280px;
@@ -601,9 +656,280 @@ body {
   .team-area {
     max-width: 910px;
   }
-  
+
   /* 4 por linha */
   .team-area.layout-4 {
     max-width: 1240px;
+  }
+}
+
+/* =========================================
+   11. ESTILOS DA PÁGINA DE CONTATO
+   ========================================= */
+.custom-input {
+  /* Fundo cinza suave para os inputs para destacar no fundo branco */
+  background-color: #f8f9fa; /* Cinza bem claro */
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+  /* Efeito ao clicar no input (foco) usando a cor amarela da marca */
+  background-color: #fff;
+  border-color: #ffbf00;
+  box-shadow: 0 0 0 4px rgba(255, 191, 0, 0.15);
+}
+
+.info-box,
+.contact-form {
+  /* Estilo do container de informações */
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Borda sutil */
+}
+
+/* Ajuste da altura do mapa para mobile */
+@media (max-width: 768px) {
+  .ratio-16x9 {
+    height: 250px; /* Garante que o mapa não fique muito pequeno no celular */
+  }
+}
+
+textarea.custom-input {
+  resize: none;
+}
+
+/* =========================================
+   12. CORREÇÃO DA NAVBAR NO MOBILE (FINAL MESMO)
+   ========================================= */
+@media (max-width: 991px) {
+  .navbar.custom-transparent {
+    background-color: #0b3a69; /* Começa AZUL SÓLIDO */
+    position: fixed !important; /* Sempre fixa no topo */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    padding-bottom: 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Leve borda para acabamento */
+  }
+
+  /* Menu Expandido (Fundo Azul) */
+  .navbar-collapse {
+    background-color: #104982;
+    margin: 0;
+    width: 100%;
+    padding: 20px 15px 25px 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-height: 85vh;
+    overflow-y: auto;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Textos e Ícones Brancos no Azul */
+  .navbar.custom-transparent .nav-link,
+  .navbar.custom-transparent .navbar-brand {
+    color: #fff !important;
+    text-shadow: none !important;
+  }
+
+  .navbar.custom-transparent .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  .navbar.custom-transparent .navbar-toggler-icon {
+    filter: invert(1);
+  }
+
+  /* Dropdown no modo Azul */
+  .navbar-nav .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    padding-left: 20px;
+  }
+  .navbar-nav .dropdown-item {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  /* A barra vira branca */
+  .navbar.custom-transparent.scrolled {
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+  }
+
+  /* O menu expandido TAMBÉM vira branco */
+  .navbar.custom-transparent.scrolled .navbar-collapse {
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+  }
+
+  /* Textos viram escuros */
+  .navbar.custom-transparent.scrolled .nav-link,
+  .navbar.custom-transparent.scrolled .navbar-brand {
+    color: #333 !important;
+  }
+
+  /* Hambúrguer vira escuro */
+  .navbar.custom-transparent.scrolled .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  .navbar.custom-transparent.scrolled .navbar-toggler-icon {
+    filter: none;
+  }
+
+  /* Dropdown no modo Branco (vira cinza claro) */
+  .navbar.custom-transparent.scrolled .navbar-nav .dropdown-menu {
+    background-color: #f8f9fa;
+  }
+  .navbar.custom-transparent.scrolled .navbar-nav .dropdown-item {
+    color: #333 !important;
+  }
+
+  .navbar-nav .nav-link.active::after,
+  .nav-link.active::after {
+    display: none !important;
+    content: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  /* Barrinha Lateral Amarela (Vertical) - Funciona nos dois estados */
+  .nav-link.active {
+    border-left: 5px solid #ffbf00;
+    padding-left: 15px !important;
+  }
+
+  /* Cor de fundo do item ativo no modo Azul */
+  .navbar:not(.scrolled) .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Cor de fundo do item ativo no modo Branco */
+  .navbar.scrolled .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  /* Alinhamento dos itens não ativos */
+  .nav-link:not(.active) {
+    border-left: 5px solid transparent;
+    padding-left: 15px !important;
+  }
+  .navbar.custom-transparent .nav-link {
+    padding-right: 0;
+  }
+
+  /* Busca e Animações */
+  .navbar-nav .dropdown-menu.show {
+    animation: fadeInMobile 0.4s ease forwards;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-top: 20px !important;
+    flex-direction: column;
+  }
+
+  #searchInput {
+    /* Input levemente cinza para contrastar se fundo for branco */
+    background-color: #f1f3f5;
+    border: 1px solid transparent;
+    width: 100%;
+    height: 45px;
+  }
+  #searchInput:focus {
+    background-color: #fff;
+    border-color: #ffbf00;
+  }
+
+  #searchBtn {
+    width: 100%;
+    margin-top: 10px;
+    height: 45px;
+  }
+
+  .popup {
+    top: auto; /* Desliga o posicionamento do topo */
+    bottom: 30px; /* Fixa no rodapé da tela */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Garante que não vaze nas bordas */
+    text-align: center;
+
+    /* Opcional: Efeito de vidro ou sombra mais forte para destacar */
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  /* cores do menu aberto */
+  .navbar-collapse.bg-ecoplan {
+    background-color: #67836a !important;
+  }
+
+    /* era pra mudar as cores da navbar, mas não funcionou??
+
+    .navbar-collapse.bg-reva {
+      background-color: #7dae7b !important;
+    }
+
+    .navbar-collapse.bg-ativa {
+      background-color: #c95110 !important;
+    }
+
+    .navbar-collapse.bg-organo {
+      background-color: #567913 !important;
+    }
+
+    /* Quando a classe 'scrolled' entra (ao rolar), forçamos o branco */
+    /* O uso de !important aqui é seguro e garante que o efeito scroll funcione *//*
+    .navbar.scrolled {
+      background-color: #ffffff !important;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave *//*
+      transition: background-color 0.4s ease; /* Transição suave entre a cor e o branco *//*
+    }
+
+    /* Opcional: Ajustar cor dos links se o fundo for escuro *//*
+    .navbar.bg-azul .nav-link,
+    .navbar.bg-verde .nav-link,
+    .navbar.bg-escuro .nav-link {
+      color: #ffffff;
+    }
+
+    /* Mas quando rolar e ficar branco, os links voltam a ser pretos/escuros *//*
+    .navbar.scrolled .nav-link {
+      color: #333333 !important;
+    } */
+}
+
+@keyframes fadeInMobile {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   13. CORREÇÃO DROPDOWN DESKTOP (SEM SOMBRA)
+   ========================================= */
+@media (min-width: 768px) {
+  /* Garante que dentro do menu dropdown NUNCA tenha sombra */
+  .navbar.custom-transparent .dropdown-menu .dropdown-item {
+    text-shadow: none !important;
+    color: #212529; /* Garante texto escuro para leitura no fundo branco */
+  }
+
+  /* Opcional: Garante o fundo branco e sombra na caixa do menu, não no texto */
+  .navbar.custom-transparent .dropdown-menu {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra na caixa é bom */
+  }
+
+  /* Efeito Hover no Desktop (Fundo cinza claro e texto preto ou amarelo) */
+  .navbar.custom-transparent .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #111;
   }
 }
